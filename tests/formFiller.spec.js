@@ -11,7 +11,7 @@ async function optionLocator(page, locator, number) {
     .click();
 }
 
-test.only("test", async ({ page }) => {
+test("test", async ({ page }) => {
   const buttonNext = page.getByRole("button", { name: "Sonraki" });
   const buttonSubmit = page.getByText("Gönder");
 
